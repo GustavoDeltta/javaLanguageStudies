@@ -1,0 +1,28 @@
+Super Sistema de Cadastro e Análise
+Crie um programa em Java que:
+
+Solicite o nome do usuário.
+Peça a idade e classifique-a conforme as faixas etárias:
+
+    Até 12 anos: Criança
+    Entre 13 e 17 anos: Adolescente
+    Entre 18 e 59 anos: Adulto
+    60 anos ou mais: Idoso
+
+Solicite uma nota de 0 a 10 e exiba o conceito conforme a tabela:
+
+    Nota ≥ 9: A
+    Nota ≥ 7: B
+    Nota ≥ 5: C
+    Nota ≥ 3: D
+    Nota < 3: F
+
+Peça um número e informe se é par ou ímpar.
+
+Peça um ano e verifique se é bissexto.
+
+Solicite dois números e uma operação matemática (+, -, , /) e exiba o resultado.
+
+Peça um nome de usuário e senha.
+Se for "admin" e "1234", exiba "Login bem-sucedido!".
+Caso contrário, exiba "Credenciais inválidas".
