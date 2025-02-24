@@ -1,5 +1,7 @@
 package conditionalsStructures;
 
+import java.util.Scanner;
+
 public class resolution {
 
     public static String person(String name, int age){
@@ -53,10 +55,58 @@ public class resolution {
         }
         return result;
     }
+
+    public static String login(String user, String password){
+
+        if(user.equals("admin") && password.equals("1234")){
+            return "Logim bem-sucedido!";
+        }else{
+            return "Credenciais inválidas";
+        }
+    }
     
     public static void main(String[] args) {
         
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Digite o seu nome: ");
+        String name = scanner.nextLine();
+        System.out.print("Insira a sua idade: ");
+        int age = scanner.nextInt();
+        
+        System.out.println(person(name, age));
+
+        System.out.print("Digite sua nota: ");
+        int grade = scanner.nextInt();
+
+        System.out.println(bulletin(grade));
+
+        System.out.print("Informe um número: ");
+        int number = scanner.nextInt();
+
+        System.out.println(pairOrOdd(number));
+
+        System.out.print("Informe um ano: ");
+        int year = scanner.nextInt();
+
+        System.out.println(leapYear(year));
+
+        System.out.print("Diga-me um número: ");
+        double number1 = scanner.nextInt();
+        System.out.print("Diga-me outro número: ");
+        double number2 = scanner.nextInt();
+
+        System.out.print("Agora escolha uma operação para realizar (+, -, , /): ");
+        String operator = scanner.nextLine();
+
+        System.out.println(calculator(number1, number2, operator));
+
+        System.out.print("Por ultimo, me informe o seu login: ");
+        String user = scanner.nextLine();
+        System.out.print("Insira a sua senha: ");
+        String password = scanner.nextLine();
+
+        System.out.println(login(user, password));
 
     }
 
